@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "nvda-client"
+version = "0.1.0"
+description = "Simple NVDA client based on nvdaControllerClient*.dll"
+authors = ["Ruslan Iskov <ruslan.rv.ua@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "nvda_client"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
